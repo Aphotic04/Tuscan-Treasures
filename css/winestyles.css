@@ -1,0 +1,94 @@
+/*
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Ty Steinbach.
+Date: 12/10/2023
+
+Author: Ty Steinbach
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create individual pages
+
+*/
+
+/*Styling the main content to be a flexbox and styling that flexbox*/
+main {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin: 10px;
+}
+
+/*Styling each wine card*/
+.card {
+    width: 300px;
+    height: 490px;
+    border-radius: 30px;
+    background-color: var(--main-green);
+    text-align: center;
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+/*Styling the images of wine*/
+section > img {
+    width: 50px;
+    height: 170px;
+}
+
+/*Styling the buy now button*/
+.buynowButton {
+    background-color: var(--sub-beige);
+    padding: 8px;
+    text-decoration: none;
+}
+
+/*Styling the buy now button when hovering and focusing*/
+.buynowButton:hover, .buynowButton:focus {
+    background-color: var(--back-beige);
+    font-size: 1.2em;
+}
+
+/*Changing up the card styling when the device width is between 481px-600px*/
+@media all and (max-width:600px) {
+    .card, .card h3, .card a {
+        font-size: .8em;
+    }
+
+    .card {
+        width: 230px;
+        height: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/*Changing up the card styling when the device width is between 401px-480px*/
+@media all and (max-width:480px) {
+    .card, .card h3, .card a {
+        font-size: .8em;
+    }
+
+    .card {
+        width: 170px;
+        height: 440px;
+    }
+}
+
+/*Changing up the card styling when the device width is at max 400px*/
+@media all  and (max-width:400px) {
+    .card {
+        width: 300px;
+        height: 490px;
+    }
+
+    .card, .card h3, .card a {
+        font-size: 1em;
+    }
+}

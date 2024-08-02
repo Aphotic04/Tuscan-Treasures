@@ -1,0 +1,62 @@
+/*
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Ty Steinbach.
+Date: 12/10/2023
+
+Author: Ty Steinbach
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create individual pages
+
+*/
+
+/*Styling each section*/
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Styling the margins for the writing and past1 image to be more uniform*/
+.pageSubTitle~p, .pageSubTitle~p, #past1 {
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 65vw;
+}
+
+/*Setting up the top margin for the timeline section*/
+#timeline {
+    margin-top: 90px;
+}
+
+/*Styling the list of the timeline*/
+aside {
+    display: flex;
+    text-align: start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Styling max width of second image*/
+#past2 {
+    max-width: 65vw;   
+}
+
+/*Restyling image 2 when the device width is between 481px-600px*/
+@media all and (max-width:600px) {
+    #past2 {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+/*Restyling image 1 when the device width is between at max 480px*/
+@media all and (max-width:480px) {
+    #past1 {
+        max-width: none;
+        width: 100%;
+    }
+}

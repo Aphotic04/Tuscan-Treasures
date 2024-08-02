@@ -1,0 +1,210 @@
+<!--
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Ty Steinbach.
+Date: 12/10/2023
+-->
+
+<!--
+Author: Ty Steinbach
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create full website
+-->
+
+<!--
+Resources:
+
+https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en
+Wine 1
+
+https://famigliamazzarrini.it/en/the-winery/
+Wine 2
+
+https://www.verrazzano.com/en/
+Wine 3
+
+https://www.ercolanimontepulciano.it/en/prodotti/
+Wine 4
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/winestyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/headerfooterstyles.css" rel="stylesheet" type="text/css">
+        <script src="../JavaScript/JavaScript.js"></script>
+        <title>Tuscan Treasures | Wine</title>
+    </head>
+
+    <body>
+
+        <!--Making header-->
+        <header>
+
+            <!--Clickable logo-->
+            <h1 id="logo"><a href="../index.html" id="homePageLink">Tuscan <img src="../images/icon.png" alt="Open treasure chest" id="icon">Treasures</a></h1>
+
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="toursandtraveling.html">Tours and Traveling</a></li>
+                    <li><a href="wine.html">Wine</a></li>
+                    <li><a href="otherproducts.html">Other Products</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Page title-->
+        <figure id="pageTitle">
+            <h2 id="pageTitleText">Wine</h2>
+        </figure>
+
+        <!--Page sub-title-->
+        <h2 class="pageSubTitle">The Real Treasure of Tuscany | Online Wine List:</h2>
+
+        <!--Meat and potatoes set up to be flexbox friendly-->
+        <main>
+
+            <!--Each section contains an image of a wine, the title and price of it, a description, and a buy now button-->
+            <section class="card">
+                <img src="../images/wine1.png" alt="Bottle of Icario red wine">
+                <h3>Sansasia Vino Nobile di Montepulciano | $115.00</h3>
+                <p>Notes of fresh red and dark fruits, undergrowth and sweet spices, together with delicate floral tones. It has a balanced and fine body.</p>
+                <a href="fake1.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+
+            <section class="card">
+                <img src="../images/wine2.png" alt="Bottle of Chianit red wine">
+                <h3>Chianti Classico Docg 2020 | $43.38</h3>
+                <p>Intense and persistent, with hints of plum jam and raspberries. It's Full, round, good balance between softness, acidity and tannins.</p>
+                <a href="fake2.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+
+            <section class="card">
+                <img src="../images/wine3.png" alt="Bottle of Castello di Verrazzano red wine">
+                <h3>Castello di Verrazzano "Sassello" Chianti Classico Gran | $79.00</h3>
+                <p>Gran Selezione represents the highest quality in Chianti, with the longest minimum aging requirement in Chianti.</p>
+                <a href="fake3.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+
+            <section class="card">
+                <img src="../images/wine4.png" alt="Bottle of Brunello Di Montalcino Secretum red wine">
+                <h3>Brunello Di Montalcino Secretum | $271.80</h3>
+                <p>A wine that pairs great with mature pecorino cheese and goat cheese. It can also be great with handmade egg pasta and meat sauce.</p>
+                <a href="fake4.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+
+            <section class="card">
+                <img src="../images/wine5.png" alt="Bottle of Rosso di Montepulciano red wine">
+                <h3>Rosso di Montepulciano D.O.C. 2022 | $32.00</h3>
+                <p>This young, ruby-red wine has aromas of ripe fruit, cherry and light vanilla notes. It is full-bodied, savory, fresh, and pleasantly tannic.</p>
+                <a href="fake5.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+
+            <section class="card">
+                <img src="../images/wine6.png" alt="Bottle of Vermentino white wine">
+                <h3>Vermentino IGT 2021 | $32.64</h3>
+                <p>Notes of fresh red and dark fruits, undergrowth and sweet spices, together with delicate floral tones. It has a balanced and fine body.</p>
+                <a href="fake6.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+
+            <section class="card">
+                <img src="../images/wine7.png" alt="Bottle of Castello di Verrazzano Rosso red wine">
+                <h3>2020 Castello di Verrazzano Rosso | $16.00</h3>
+                <p>This Sangiovese blend is for those seeking a youthful blend that dances along the nose and palate. It has notes of red fruit, black currant, and plum.</p>
+                <a href="fake7.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+            
+            <section class="card">
+                <img src="../images/wine8.png" alt="Bottle of Chianti Colli Senesi red wine">
+                <h3>Chianti Colli Senesi 2022 Ercolani | $17.47</h3>
+                <p>This 1-year aged wine is fresh with a floral overtone and playful, fruity hints of cherry. This wine pairs with medium-long seasoned cheeses.</p>
+                <a href="fake8.php" target="_blank" class="buynowButton">Buy Now</a>
+            </section>
+        </main>
+
+        <!--Footer set up to be flexbox friendly-->
+        <footer>
+
+            <!--Location container-->
+            <section id="location">
+                <h2>Location</h2>
+                <p>
+                    <b>Company Information:</b>
+                    <br>
+                    <br>
+                    Address:
+                    <br>
+                    Bolgherello s.n.c. P.IVA 01487580498,
+                    via del Casone Ugolino 24, 57022,
+                    Castagneto Carducci (LI)
+                </p>
+                <p>
+                    <b>Hours:</b>
+                    <br>
+                    <br>
+                    Monday - Friday
+                    <br>
+                    11:00am to 6:00pm
+                </p>
+            </section>
+
+            <!--Newsletter container-->
+            <section id="newsletter">
+                <h2>Newsletter</h2>
+                <b>Join our newsletter to get exclusive deals & news</b>
+                <br>
+                <form action="/submit.php" id="newsletterform">
+                    <fieldset id="newsletterinfo">
+                        <legend>Personal Information</legend>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <br> 
+
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <br>
+                        
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </fieldset>
+
+                    <input type="button" value="Submit" id="newssubmit" onclick="showAlert();">
+                </form>
+            </section>
+
+            <!--Additional sources container-->
+            <section id="addsources">
+                <h2>Additional Sources</h2>
+                <a href="https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en" target="_blank">Icaria Winery</a>
+                <br>
+                <a href="https://famigliamazzarrini.it/en/the-winery/" target="_blank">Poggio Amorelli</a>
+                <br>
+                <a href="https://www.verrazzano.com/en/" target="_blank">Castello de Verrazzano</a>
+                <br>
+                <a href="https://www.ercolanimontepulciano.it/en/prodotti/" target="_blank">Ercolani Azienda Argicola</a>
+            </section>
+
+            <!--Contact container-->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Have any questions about our business or opperations? Try sending us a quick message!
+                    <br>
+                    <i>Reply times may vary</i>
+                </p>
+                <a href="mailto:fakeemail@gmail.com" id="contactButton">Contact Us</a>
+            </section>
+        </footer>
+    </body>
+</html>

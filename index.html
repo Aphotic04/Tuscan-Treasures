@@ -1,0 +1,193 @@
+<!--
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Ty Steinbach, Tyson Radke, Joshua Hartneck
+Date: 12/10/2023
+-->
+
+<!--
+Author: Ty Steinbach, Tyson Radke, Joshua Hartneck
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create full website
+-->
+
+<!--
+Resources:
+
+https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en
+Wine 1
+
+https://famigliamazzarrini.it/en/the-winery/
+Wine 2
+
+https://www.verrazzano.com/en/
+Wine 3
+
+https://www.ercolanimontepulciano.it/en/prodotti/
+Wine 4
+
+https://www.w3schools.com/css/css3_object-fit.asp
+making the video fit without keeping the aspect ratio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet">
+        <title>Tuscan Treasures | Home Page</title>
+        <script src="JavaScript/JavaScript.js"></script>
+    </head>
+
+    <body>
+
+        <!--Making header-->
+        <header>
+
+            <!--Clickable logo-->
+            <h1 id="logo"><a href="#" id="homePageLink">Tuscan <img src="images/icon.png" alt="Open treasure chest" id="icon">Treasures</a></h1>
+
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="html/toursandtraveling.html">Tours and Traveling</a></li>
+                    <li><a href="html/wine.html">Wine</a></li>
+                    <li><a href="html/otherproducts.html">Other Products</a></li>
+                    <li><a href="html/membership.html">Membership</a></li>
+                    <li><a href="html/history.html">History</a></li>
+                    <li><a href="html/aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Autoplay muted video-->
+        <video autoplay muted>
+            <source src="images/ItalybyDrone4K-Tuscany_1.mp4">
+        </video>
+
+        <!--Webpage title banner-->
+        <figure id="pageTitle">
+            <h2 id="pageTitleText">Home Page</h2>
+        </figure>
+
+        <!--Meat and potatoes, set up to be grid friendly-->
+        <main>
+
+            <!--Text about tours with linked webpage button-->
+            <aside id="tourstext">
+                <h2>Tours</h2>
+                <p>See a side of the Tuscan region not talked about in books or post cards.</p>
+                <a href="html/toursandtraveling.html"><h3>See Tours</h3></a>
+            </aside>
+
+            <!--Photo to go with the above-->
+            <figure id="toursimage">
+                <img src="images/tour.png" alt="A night view of a shoreline in Tuscany">
+            </figure>
+
+            <!--Banner for wine with linked webpage button-->
+            <section id="wineBanner">
+                <h2>High Quality Wine</h2>
+                <a href="html/wine.html" id="wineBannerButton"><h3>View Selection</h3></a>
+            </section>
+
+            <!--Photo to support the text below-->
+            <figure id="sienaphoto">
+                <img src="images/siena.png" alt="A landscape view of Siena">
+            </figure>
+
+            <!--Abous us text with linked webpage button-->
+            <aside id="aboutusText">
+                <h2>See what we are about now</h2>
+                <p>
+                    We have fully invested in giving you the most immersive Tuscan experience possible. 
+                    Our time in the region has helped us develop personal relationships creating a one of a kind adventure. 
+                    You may arrive as a stranger, but you will leave feeling like a friend. 
+                </p>
+                <a href="html/aboutus.html" id="aboutusButton"><h3>About Us</h3></a>
+            </aside>
+        </main>
+
+        <!--Return to top button-->
+        <a href="#" id="topLink">^ Return to Top ^</a>
+
+        <!--Footer set up to be flexbox friendly-->
+        <footer>
+
+            <!--Location container-->
+            <section id="location">
+                <h2>Location</h2>
+                <p>
+                    <b>Company Information:</b>
+                    <br>
+                    <br>
+                    Address:
+                    <br>
+                    Bolgherello s.n.c. P.IVA 01487580498,
+                    via del Casone Ugolino 24, 57022,
+                    Castagneto Carducci (LI)
+                </p>
+                <p>
+                    <b>Hours:</b>
+                    <br>
+                    <br>
+                    Monday - Friday
+                    <br>
+                    11:00am to 6:00pm
+                </p>
+            </section>
+
+            <!--Newsletter container-->
+            <section id="newsletter">
+                <h2>Newsletter</h2>
+                <b>Join our newsletter to get exclusive deals & news</b>
+                <br>
+                <form id="newsletterform">
+                    <fieldset id="newsletterinfo">
+                        <legend>Personal Information</legend>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <br> 
+
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <br>
+                        
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </fieldset>
+
+                    <input type="button" value="Submit" id="newssubmit" onclick="showAlert();">
+                </form>
+            </section>
+
+            <!--Additional sources container-->
+            <section id="addsources">
+                <h2>Additional Sources</h2>
+                <a href="https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en" target="_blank">Icaria Winery</a>
+                <br>
+                <a href="https://famigliamazzarrini.it/en/the-winery/" target="_blank">Poggio Amorelli</a>
+                <br>
+                <a href="https://www.verrazzano.com/en/" target="_blank">Castello de Verrazzano</a>
+                <br>
+                <a href="https://www.ercolanimontepulciano.it/en/prodotti/" target="_blank">Ercolani Azienda Argicola</a>
+            </section>
+
+            <!--Contact container-->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Have any questions about our business or opperations? Try sending us a quick message!
+                    <br>
+                    <i>Reply times may vary</i>
+                </p>
+                <a href="mailto:fakeemail@gmail.com" id="contactButton">Contact Us</a>
+            </section>
+        </footer>
+    </body>
+</html>

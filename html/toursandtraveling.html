@@ -1,0 +1,205 @@
+<!--
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Josh Hartneck.
+Date: 12/10/2023
+-->
+
+<!--
+Author: Josh Hartneck
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create individual pages
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/headerfooterstyles.css">
+<link rel="stylesheet" href="../css/toursandtravelingstyles.css">
+<script src="../JavaScript/JavaScript.js"></script>
+<title>Tuscan Treasures | Travel and Tours</title>
+</head>
+
+    <body>
+        <!--Making header-->
+        <header>
+
+            <!--Clickable logo-->
+            <h1 id="logo"><a href="../index.html" id="homePageLink">Tuscan <img src="../images/icon.png" alt="Open treasure chest" id="icon">Treasures</a></h1>
+
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="toursandtraveling.html">Tours and Traveling</a></li>
+                    <li><a href="wine.html">Wine</a></li>
+                    <li><a href="otherproducts.html">Other Products</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Page title-->
+        <figure id="pageTitle">
+            <h2 id="pageTitleText">Tours and Traveling</h2>
+        </figure>
+        <h2 class="pageSubTitle">Three Incredible Cities to Tour</h2>
+        <!--Creating table and adding info.-->
+        <main>
+			<table>
+				<tr>
+				<th>Cities</th>
+				<td>Florence</td>
+				<td>Pisa</td>
+				<td>Siena</td>
+				</tr>
+				
+                <tr>
+				<th>Tour destination</th>
+				<td>Uffizi Gallery,
+				Florence Duomo,
+				Michelangelo's David,
+				The Birth of Venus,
+				Primavera,
+				Venus of Urbino,
+				Ponte Vecchio,
+				Palazzo Vecchio
+				Accademia Gallery</td>
+				
+                <td>
+				Explore the Piazza dei Miracoli, in the heart of Pisa, and admire its monuments
+				Visit the Cathedral of Pisa, one of the most important monuments of the city
+				Learn about Galileo’s life as you see the historic streets and monuments of Pisa
+                </td>
+				
+                <td>Piazza del Campo,
+				Siena Duomo,
+				Palazzo Piccolomini,
+				Palazzo Pubblico, 
+				Via Francigena</td>
+				</tr>
+				
+                <tr>
+				<th>Tour descriptions</th>
+				<td>In the company of a local expert, 
+				we will visit the world-famous Uffizi Gallery, 
+				marvel at the Duomo in the main historical center of the city, 
+				stop for a delicious lunch, 
+				and visit one of the city's most famous pieces of art, 
+				Michelangelo’s Statue of David showcased in the Accademia Gallery. 
+				This day tour provides an overview of Florence’s history and some of its most famous sites, 
+				perfect for travelers with a desire to soak up this spectacular Italian city. 
+				</td>
+				
+                <td>This 2-hour private tour of Pisa, designed and priced for up to 2 persons, 
+				will take you to the heart of this enchanting city. 
+				With a professional guide you’ll admire the historic center and 
+				discover its most famous attractions, including the Pisa Cathedral.
+				</td>
+				
+                <td>During your three hours exploring this enchanting city, 
+				you will embark on a journey to uncover the very essence of Siena, 
+				a city that has played an integral role in shaping the tapestry of Italian history. 
+				Guided by an expert who possesses an unparalleled understanding of 
+				Siena's hidden gems, you'll delve into the heart of this captivating place, 
+				unraveling its secrets and immersing yourselves in its captivating charm.
+				</td>
+				</tr>
+				
+                <tr>
+				<th>Tour pricing</th>
+				<td>$150</td>
+				<td>$300</td>
+				<td>$250</td>
+				</tr>
+				<tr>
+				<th>Links</th>
+				<td>https://www.contexttravel.com/cities/florence</td>
+				<td>https://www.getyourguide.com/pisa</td>
+				<td>https://www.contexttravel.com/cities/tuscany/tours/</td>
+				</tr>
+				 
+				</table>
+					
+        </main>
+        <!--Creating Footer that matches website.-->
+        <!--Footer set up to be flexbox friendly-->
+        <footer>
+
+            <!--Location container-->
+            <section id="location">
+                <h2>Location</h2>
+                <p>
+                    <b>Company Information:</b>
+                    <br>
+                    <br>
+                    Address:
+                    <br>
+                    Bolgherello s.n.c. P.IVA 01487580498,
+                    via del Casone Ugolino 24, 57022,
+                    Castagneto Carducci (LI)
+                </p>
+                <p>
+                    <b>Hours:</b>
+                    <br>
+                    <br>
+                    Monday - Friday
+                    <br>
+                    11:00am to 6:00pm
+                </p>
+            </section>
+
+            <!--Newsletter container-->
+            <section id="newsletter">
+                <h2>Newsletter</h2>
+                <b>Join our newsletter to get exclusive deals & news</b>
+                <br>
+                <form action="/submit.php" id="newsletterform">
+                    <fieldset id="newsletterinfo">
+                        <legend>Personal Information</legend>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <br> 
+
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <br>
+                        
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </fieldset>
+
+                    <input type="button" value="Submit" id="newssubmit" onclick="showAlert();">
+                </form>
+            </section>
+
+            <!--Additional sources container-->
+            <section id="addsources">
+                <h2>Additional Sources</h2>
+                <a href="https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en" target="_blank">Icaria Winery</a>
+                <br>
+                <a href="https://famigliamazzarrini.it/en/the-winery/" target="_blank">Poggio Amorelli</a>
+                <br>
+                <a href="https://www.verrazzano.com/en/" target="_blank">Castello de Verrazzano</a>
+                <br>
+                <a href="https://www.ercolanimontepulciano.it/en/prodotti/" target="_blank">Ercolani Azienda Argicola</a>
+            </section>
+
+            <!--Contact container-->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Have any questions about our business or opperations? Try sending us a quick message!
+                    <br>
+                    <i>Reply times may vary</i>
+                </p>
+                <a href="mailto:fakeemail@gmail.com" id="contactButton">Contact Us</a>
+            </section>
+        </footer>
+    </body>
+</html>

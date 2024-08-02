@@ -1,0 +1,63 @@
+/*
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Josh Hartneck.
+Date: 12/10/2023
+
+
+<!--
+Author: Josh Hartneck
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create individual pages
+
+Source: file:///C:/Users/joshu/OneDrive/100%20CSC%20135/HartneckRadkeSteinbachProject6/html/toursandtraveling.html*/
+
+body {
+    margin: 0;
+  }
+  
+      /*Getting flex container to fit the page and theme of website*/
+      .flex-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 250px;
+          background-image: url("images/pagetitle.png");
+      
+  }
+  
+   /*Making sure areas with text are formatted stylishly*/
+  select, textarea {
+    width: 80%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    resize: vertical;
+  }
+     /*Styling table to fit theme and fit mobile devices.*/     
+      table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: block; 
+    overflow-x: auto;   
+    -webkit-overflow-scrolling: touch;
+  }
+   /*Keeping table data uniform.*/
+  td {
+    border:1px solid #000000;
+    text-align: center;
+    padding: 10px;
+    background-color: #ebd8c5;
+  }
+  /*Making the table header look nice.*/
+  th {
+    border: 1px solid #000000;
+    text-align: center;
+    background-color: #79945A;
+  }	

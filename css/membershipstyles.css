@@ -1,0 +1,49 @@
+/*
+I certify that the CSS file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Tyson Radke. Date: 12/8/2023
+*/
+/*
+Author: Tyson Radke
+Date: 12/8/2023
+Class:CSC135
+Project: Final Project
+Description: Create my 2 pages for our final project
+*/
+/* Styling for whole document -- add comments throughout your file */
+
+/* I also added bolding directly into the html code*/
+/* I added the background color and font sizing*/
+#mydiv {
+    background-color: var(--back-beige);
+    font-size: 17pt;
+    font-style: var(--main-font);
+    margin: 0;
+}
+/* I also bolded the letters in the html file as a style*/
+#membershipForm {
+    font-size: 17pt;
+    font-style: var(--main-font);
+    text-align: left;
+}
+/* This allows the page to be accessed in different sizes */
+@media all and (max-width: 600px) {
+    #mydiv {
+        font-size: 14pt;
+    }
+    #membershipForm {
+        font-size: 14pt;
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #mydiv {
+        font-size: 12pt;
+    }
+
+    #membershipForm {
+        font-size: 12pt;
+        max-width: 100%;
+    }
+}

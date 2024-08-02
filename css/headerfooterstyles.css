@@ -1,0 +1,290 @@
+/*
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Ty Steinbach.
+Date: 12/10/2023
+
+Author: Ty Steinbach
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create individual pages
+
+*/
+
+/*Color and font variables for consistency*/
+:root {
+    --back-beige: #f9f5f0;
+    --sub-beige: #ecd8c5;
+    --light-green: #c8e6a5;
+    --main-green: #79945A;
+    --deep-green: #3f4d2f;
+    --maroon: #945a5a;
+    --light-maroon: #ab7b68;
+    --main-font: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    --title-font: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+/*Making a base style for everything to be built off of*/
+body {
+    font-size: 17pt;
+    font-style: var(--main-font);
+    margin: 0;
+    background-color: var(--back-beige);
+    z-index: 1;
+}
+
+/*Making sure these are in the front*/
+main, header, footer, section {
+    z-index: 2;
+}
+
+/*Making base header sizes*/
+h1 {
+    font-size: 25pt;
+}
+
+h2 {
+    font-size: 25pt;
+} 
+
+h3 {
+    font-size: 20pt;
+}
+
+/*Making the header flex and giving background color*/
+header {
+    background-color: var(--maroon);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Styling logo link*/
+#homePageLink {
+    text-decoration: none;
+    color: black;
+}
+
+/*Styling logo link when hovering*/
+#homePageLink:hover {
+    color: var(--deep-green);
+}
+
+/*Styling full logo*/
+#logo {
+    background-color: var(--sub-beige);
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+/*Styling icon in logo*/
+#icon {
+    width: 1.2em;
+}
+
+/*Styling full nav bar*/
+nav {
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*Styling the list of items in nav bar*/
+nav ul{
+    justify-content: center;
+    display: inline-flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+/*Styling individual links in nav bar list*/
+nav ul li a {
+    display: block;
+    padding: 1em;
+    color: var(--back-beige);
+    text-decoration: none;
+}
+
+/*Styling nav links when focused and hovered*/
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #ddd;
+    color: var(--deep-green);
+}
+
+
+/*styling the background image for the page title*/
+#pageTitle {
+    background-image: url(../images/pagetitle.png);
+    height: 400px;
+    text-align: center;
+    margin: 0;
+}
+
+/*Styling the text for the page title*/
+#pageTitleText {
+    display: inline-block;
+    background-color: var(--sub-beige);
+    padding: 6px;
+    margin-top: 200px;
+    width: 330px;
+}
+
+/*Styling the page sub-titles*/
+.pageSubTitle {
+    display: block;
+    width: 50vw;
+    background-color: var(--light-maroon);
+    font-size: 20pt;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+/*Styling the base of the footer*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: var(--maroon);
+    padding: 5px;
+    padding-left: 30px;
+    padding-right:30px;
+    color: var(--back-beige);
+    font-size: .6em;
+}
+
+/*Styling the width of each section within the footer*/
+footer > section {
+    width: 300px;
+}
+
+/*Moving the form to center content*/
+#newsletterform {
+    text-align: center;
+}
+
+/*Making the individual items in the fieldset to be at the end of the box*/
+#newsletterinfo{
+    text-align: end;
+}
+
+/*Styling the text input boxes*/
+input[type=text] {
+    width: 250px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+/*Styling the text input boxes when focused*/
+input[type=text]:focus {
+    border-color: var(--deep-green);
+    border: var(--deep-green) solid 4px;
+}
+
+/*Styling the submit button*/
+input[type=button] {
+    font-size: 14pt;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Styling submit button when hovering*/
+input[type=button]:hover {
+    cursor: pointer;
+    font-size: 15pt;
+}
+
+/*Styling link text color*/
+a {
+    color: black;
+}
+
+/*Styling the color of the additional sources links*/
+#addsources a {
+    color: var(--back-beige);
+}
+
+/*Styling the additional sources links when focused*/
+#addsources a:focus {
+    background-color: var(--back-beige);
+    color: var(--deep-green);
+}
+
+/*Styling the contact us button*/
+#contactButton {
+    background-color: var(--main-green);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*Styling the contact us button when hovering*/
+#contactButton:hover {
+    background-color: var(--light-green);
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/*Mostly changing the footer to better fit a device that is 600px wide*/
+@media all and (max-width:600px) {
+    footer {
+        font-size: .6em;
+    }
+
+    footer > section {
+        width: 200px;
+    }
+
+    input[type=text] {
+        width: 200px;
+    }
+
+    .pageSubTitle {
+        width: 100%;
+    }
+}
+
+/*Styling the header and footer to be more verical at 480px device width*/
+@media all and (max-width:480px) {
+    
+    nav {
+        font-size: .8em;
+    }
+
+    footer {
+        font-size: .7em;
+    }
+
+    footer > section {
+        width: 150px;
+    }
+
+    input[type=text] {
+        width: 150px;
+    }
+}
+
+
+/*Changing up the navigation at 400px to be more verticle*/
+@media all and (max-width:400px)  {
+    nav {
+        font-size: .8em;
+    }
+    nav ul li a {
+        padding: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+}

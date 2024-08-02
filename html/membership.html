@@ -1,0 +1,185 @@
+<!--
+    I certify that the HTML file I am submitting is all my own work.
+    None of it is copied from any source or any person.
+    Signed: Tyson Radke. Dated: 12/8/2023
+-->
+<!--
+    Author: Tyson Radke
+    Date: 12/8/2023
+    Class: CSC135
+    Project: Final Project
+    Description: Create my 2 pages for the final project
+-->
+
+<!--
+Resources:
+
+https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en
+Wine 1
+
+https://famigliamazzarrini.it/en/the-winery/
+Wine 2
+
+https://www.verrazzano.com/en/
+Wine 3
+
+https://www.ercolanimontepulciano.it/en/prodotti/
+Wine 4
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/membershipstyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/headerfooterstyles.css" rel="stylesheet" type="text/css">
+        <script src="../JavaScript/JavaScript.js"></script>
+        <title>Tuscan Treasures | Membership</title>
+    </head>
+
+    <body>
+        <header>
+
+            <!--Clickable logo-->
+            <h1 id="logo"><a href="../index.html" id="homePageLink">Tuscan <img src="../images/icon.png" alt="Open treasure chest" id="icon">Treasures</a></h1>
+
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="toursandtraveling.html">Tours and Traveling</a></li>
+                    <li><a href="wine.html">Wine</a></li>
+                    <li><a href="otherproducts.html">Other Products</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <figure id="pageTitle">
+                <h2 id="pageTitleText">Membership</h2>
+            </figure>
+            <!--I first want to add the paragraph about new members to catch peoples attention-->
+            <!-- After that I want to show all the membership prices and benefits so they are easily seen-->
+            <div id="mydiv">
+                <br>
+                <p>New members are able to select one of three membership options. Each membership has a different cost amount as well as different benefits.</p>
+                <br>
+                <p><b>Bronze</b> $7.99 monthly: In store 15% discount, early member exclusive drops</p>
+                <p><b>Silver</b> $10.99 monthly: In store 20% discount, early member exclusive drops, online store 10% discount, coupons</p>
+                <p><b>Platinum</b> $14.99 monthly: In store 25% discount, early member exclusive drops, online store 10% discount, coupons, free birthday gift, free virtual events</p>
+                <br>
+            <!-- Adding breaks allows the users to see the difference in each paragraph-->
+            <br>
+            <br>
+            <!-- This is where I enter the form and get all the required info for someone to become a member-->
+            <form id="membershipForm" action="submit_form.php" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email2" name="email" required>
+            
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <p>Membership Status:</p>
+                <input type="radio" id="option1" name="membershipOption" value="Option 1" required>
+                <label for="option1">Bronze</label>
+            
+                <input type="radio" id="option2" name="membershipOption" value="Option 2" required>
+                <label for="option2">Silver</label>
+            
+                <input type="radio" id="option3" name="membershipOption" value="Option 3" required>
+                <label for="option3">Platinum</label>
+                <!-- The extra checkbox is added to decide if you want to recieve emails-->
+                <p>
+                    <input type="checkbox" id="receiveEmails" name="receiveEmails">
+                    <label for="receiveEmails">I want to receive promotions and newsletters.</label>
+                </p>
+                <!-- input type submit allows the users to submit the info to us-->
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+        </main>
+        <footer>
+
+            <!--Location container-->
+            <section id="location">
+                <h2>Location</h2>
+                <p>
+                    <b>Company Information:</b>
+                    <br>
+                    <br>
+                    Address:
+                    <br>
+                    Bolgherello s.n.c. P.IVA 01487580498,
+                    via del Casone Ugolino 24, 57022,
+                    Castagneto Carducci (LI)
+                </p>
+                <p>
+                    <b>Hours:</b>
+                    <br>
+                    <br>
+                    Monday - Friday
+                    <br>
+                    11:00am to 6:00pm
+                </p>
+            </section>
+
+            <!--Newsletter container-->
+            <section id="newsletter">
+                <h2>Newsletter</h2>
+                <b>Join our newsletter to get exclusive deals & news</b>
+                <br>
+                <form action="/submit.php" id="newsletterform">
+                    <fieldset id="newsletterinfo">
+                        <legend>Personal Information</legend>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <br> 
+
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <br>
+                        
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </fieldset>
+
+                    <input type="button" value="Submit" id="newssubmit" onclick="showAlert();">
+                </form>
+            </section>
+
+            <!--Additional sources container-->
+            <section id="addsources">
+                <h2>Additional Sources</h2>
+                <a href="https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en" target="_blank">Icaria Winery</a>
+                <br>
+                <a href="https://famigliamazzarrini.it/en/the-winery/" target="_blank">Poggio Amorelli</a>
+                <br>
+                <a href="https://www.verrazzano.com/en/" target="_blank">Castello de Verrazzano</a>
+                <br>
+                <a href="https://www.ercolanimontepulciano.it/en/prodotti/" target="_blank">Ercolani Azienda Argicola</a>
+            </section>
+
+            <!--Contact container-->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Have any questions about our business or opperations? Try sending us a quick message!
+                    <br>
+                    <i>Reply times may vary</i>
+                </p>
+                <a href="mailto:fakeemail@gmail.com" id="contactButton">Contact Us</a>
+            </section>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+/*
+I certify that the CSS file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Tyson Radke. Date: 12/8/2023
+*/
+/*
+Author: Tyson Radke
+Date: 12/8/2023
+Class:CSC135
+Project: Final Project
+Description: Create my 2 pages for our final project
+*/
+/* Styling for whole document -- add comments throughout your file */
+
+/* I added the flex box to seperate the images */
+.flex-container {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.flex-item {
+    min-height: 100px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    margin: 10px;
+}
+/* Adjusting the image percentages allows space in each box */
+img {
+    max-width: 60%;
+    max-height: 50%;
+    object-fit: cover;
+}
+/* This allows the page to be accessed in different sizes */
+@media all and (max-width: 600px) {
+    .flex-container {
+        font-size: 14pt;
+    }
+    .flex-item {
+        font-size: 14pt;
+        max-width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .flex-container {
+        font-size: 12pt;
+    }
+    .flex-item {
+        font-size: 12pt;
+        max-width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+}

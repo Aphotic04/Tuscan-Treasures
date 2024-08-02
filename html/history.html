@@ -1,0 +1,236 @@
+<!--
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Ty Steinbach.
+Date: 12/10/2023
+-->
+
+<!--
+Author: Ty Steinbach
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create full website
+-->
+
+<!--
+Resources:
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/historystyles.css" rel="stylesheet" type="text/css">
+        <link href="../css/headerfooterstyles.css" rel="stylesheet">
+        <script src="../JavaScript/JavaScript.js"></script>
+        <title>Tuscan Treasures | History</title>
+    </head>
+
+    <body>
+
+        <!--Making header-->
+        <header>
+
+            <!--Clickable logo-->
+            <h1 id="logo"><a href="../index.html" id="homePageLink">Tuscan <img src="../images/icon.png" alt="Open treasure chest" id="icon">Treasures</a></h1>
+
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="toursandtraveling.html">Tours and Traveling</a></li>
+                    <li><a href="wine.html">Wine</a></li>
+                    <li><a href="otherproducts.html">Other Products</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Page title-->
+        <figure id="pageTitle">
+            <h2 id="pageTitleText">History</h2>
+        </figure>
+
+        <!--Meat and potatoes-->
+        <main>
+
+            <!--Split up main content into 3 sections, each with a sub-title-->
+            <section id="earlyHistory">
+
+                <!--Sub-title for early history-->
+                <h2 class="pageSubTitle">A little about our past | Early History</h2>
+
+                <!--Some historical content-->
+                <P>
+                    Our company, Tuscan Treasures, began back in 1980 when Tuscany was going through a severe drought that caused most vineyards to wilt.
+                    This was a huge issue as the wine export is a main source of economical stability within the area. 
+                    Tuscany was reaching out to its community to figure out a solution to this drought of water and money. 
+                    My grandfather, Gino Saverelli, volunteered his services to help promote everything Tuscany has to offer to tourists. 
+                    With his connections he managed to bring more tourists to the area and spread the solution of tourists to other citizens. 
+                    He did not solve the crisis single-handedly, but he contributed to helping out his community and that is a value that we hold dear and try to keep as the core value of our company.
+                </P>
+
+                <!--Image-->
+                <img src="../images/past.png" alt="An old black and white photo of the front of an Italian shop" id="past1">
+            </section>
+
+            <section id="postDrought">
+
+                <!--Sub-title for Post-drought-->
+                <h2 class="pageSubTitle">A little about our past | Post-Drought</h2>
+
+                <!--More historical content-->
+                <p>
+                    In 1982 the drought had stopped and normal wine production resumed around 1983. 
+                    Around 1985 is when we decided to help support local businesses by advertising or selling their products. 
+                    Eventually when tourism got big enough, we started collaborating with local craftsmen as well. 
+                    This gave a great opportunity for both us and the local craftsman to grow and expand. From here we only grew bigger and expanded our reach once the internet reached further accessibility in the early 2000's. 
+                    This was when we started implementing an online shopping system for any of our products we carried that could be shipped. 
+                    Starting out, we could only ship intercontinental, but we have since upgraded to worldwide shipping and influence.
+                </p>
+            </section>
+
+            <section id="timeline">
+
+                <!--Sub-title for timeline-->
+                <h2 class="pageSubTitle">A little about our past | Timeline</h2>
+
+                <!--Timeline in list form-->
+                <aside>
+                    <img src="../images/past2.jpg" alt="A new color photo of the front entry of an Italian shop" id="past2">
+                    <ul>
+                        <li>
+                            1980
+                            <ul>
+                                <li>Tuscan Drought of 1980</li>
+                            </ul>
+                        </li>
+                        <li>
+                            1981
+                            <ul>
+                                <li>Tuscan Economy Becomes Unstable</li>
+                                <li>Gino Saverelli Volenteers and Began Tuscan Treasures</li>
+                            </ul>
+                        </li>
+                        <li>
+                            1982
+                            <ul>
+                                <li>Tuscan Drought Ends</li>
+                            </ul>
+                        </li>
+                        <li>
+                            1985
+                            <ul>
+                                <li>Local Business Resale and Advertising</li>
+                            </ul>
+                        </li>
+                        <li>
+                            1993
+                            <ul>
+                                <li>Local Craftsmen Get Involved</li>
+                            </ul>
+                        </li>
+                        <li>
+                            2007
+                            <ul>
+                                <li>Tuscan Treasures Website Launched</li>
+                            </ul>
+                        </li>
+                        <li>
+                            2014
+                            <ul>
+                                <li>Online Shopping Added to the Website</li>
+                            </ul>
+                        </li>
+                        <li>
+                            2020
+                            <ul>
+                                <li>Worldwide Shipping for our Website</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
+
+        <!--Footer set up to be flexbox friendly-->
+        <footer>
+
+            <!--Location container-->
+            <section id="location">
+                <h2>Location</h2>
+                <p>
+                    <b>Company Information:</b>
+                    <br>
+                    <br>
+                    Address:
+                    <br>
+                    Bolgherello s.n.c. P.IVA 01487580498,
+                    via del Casone Ugolino 24, 57022,
+                    Castagneto Carducci (LI)
+                </p>
+                <p>
+                    <b>Hours:</b>
+                    <br>
+                    <br>
+                    Monday - Friday
+                    <br>
+                    11:00am to 6:00pm
+                </p>
+            </section>
+
+            <!--Newsletter container-->
+            <section id="newsletter">
+                <h2>Newsletter</h2>
+                <b>Join our newsletter to get exclusive deals & news</b>
+                <br>
+                <form action="/submit.php" id="newsletterform">
+                    <fieldset id="newsletterinfo">
+                        <legend>Personal Information</legend>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <br> 
+
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname">
+                        <br>
+                        
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </fieldset>
+
+                    <input type="button" value="Submit" id="newssubmit" onclick="showAlert();">
+                </form>
+            </section>
+
+            <!--Additional sources container-->
+            <section id="addsources">
+                <h2>Additional Sources</h2>
+                <a href="https://icario.it/prodotto/sansasia-vino-nobile-di-montepulciano-d-o-c-g-2017/?lang=en" target="_blank">Icaria Winery</a>
+                <br>
+                <a href="https://famigliamazzarrini.it/en/the-winery/" target="_blank">Poggio Amorelli</a>
+                <br>
+                <a href="https://www.verrazzano.com/en/" target="_blank">Castello de Verrazzano</a>
+                <br>
+                <a href="https://www.ercolanimontepulciano.it/en/prodotti/" target="_blank">Ercolani Azienda Argicola</a>
+            </section>
+
+            <!--Contact container-->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Have any questions about our business or opperations? Try sending us a quick message!
+                    <br>
+                    <i>Reply times may vary</i>
+                </p>
+                <a href="mailto:fakeemail@gmail.com" id="contactButton">Contact Us</a>
+            </section>
+        </footer>
+    </body>
+</html>

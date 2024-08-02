@@ -1,0 +1,547 @@
+/*
+I certify that the HTML file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Ty Steinbach, Tyson Radke, Joshua Hartneck
+Date: 12/10/2023
+
+Author: Ty Steinbach, Tyson Radke, Joshua Hartneck
+Date: 12/10/2023
+Class: CSC135
+Project: Lab 6
+Description: Create individual pages
+
+*/
+
+/*Color and font variables for consistency*/
+:root {
+    --back-beige: #f9f5f0;
+    --sub-beige: #ecd8c5;
+    --light-green: #c8e6a5;
+    --main-green: #79945A;
+    --deep-green: #3f4d2f;
+    --maroon: #945a5a;
+    --light-maroon: #ab7b68;
+    --main-font: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    --title-font: "Lucida Handwriting", "Brush Script MT", cursive;
+}
+
+/*Making a base style for everything to be built off of*/
+body {
+    font-size: 17pt;
+    font-style: var(--main-font);
+    margin: 0;
+    background-color: var(--back-beige);
+    z-index: 1;
+}
+
+/*Making sure these are in the front*/
+main, header, footer, section {
+    z-index: 2;
+}
+
+/*Making base header sizes*/
+h1 {
+    font-size: 25pt;
+}
+
+h2 {
+    font-size: 25pt;
+} 
+
+h3 {
+    font-size: 20pt;
+}
+
+/*Making the header flex and giving background color*/
+header {
+    background-color: var(--maroon);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Styling logo link*/
+#homePageLink {
+    text-decoration: none;
+    color: black;
+}
+
+/*Styling logo link when hovering*/
+#homePageLink:hover {
+    color: var(--deep-green);
+}
+
+/*Styling full logo*/
+#logo {
+    background-color: var(--sub-beige);
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    font-family: var(--title-font);
+    text-align: center;
+}
+
+/*Styling icon in logo*/
+#icon {
+    width: 1.2em;
+}
+
+/*Styling full nav bar*/
+nav {
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*Styling the list of items in nav bar*/
+nav ul{
+    justify-content: center;
+    display: inline-flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+/*Styling individual links in nav bar list*/
+nav ul li a {
+    display: block;
+    padding: 1em;
+    color: var(--back-beige);
+    text-decoration: none;
+}
+
+/*Styling nav links when focused and hovered*/
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #ddd;
+    color: var(--deep-green);
+}
+
+
+
+/*Setting up the video, including making it disregard aspect-ratio (more or less)*/
+video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin: 0;
+}
+
+/*Styling the page title banner*/
+#pageTitle {
+    background-color: var(--main-green);
+    padding: 10px;
+    margin: 0;
+}
+
+/*Styling the text in the page title banner*/
+#pageTitleText {
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 50pt;
+}
+
+/*Styling tours textual content and making grid item*/
+#tourstext {
+    grid-area: tourstext;
+    margin: auto;
+}
+
+/*Styling the title within the tours text*/
+#tourstext h2 {
+    text-align: center;
+    width: 200px;
+    background-color: var(--sub-beige);
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/*Styling the main content text for the tours text*/
+#tourstext p {
+    margin-top: 110px;
+    margin-bottom: 70px;
+}
+
+/*Styling the page link for the tours and travelling page*/
+#tourstext h3 {
+    text-align: center;
+    width: 150px;
+    background-color: var(--light-maroon);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/*Taking off underlining of links*/
+#tourstext a, #aboutusText a {
+    text-decoration: none;
+}
+
+/*Styling the buttons for tours and about us sections when hovering and focusing*/
+#tourstext h3:hover, #aboutusText h3:hover {
+    background-color: var(--maroon);
+    font-size: 1.2em;
+}
+
+/*Styling the tours figure element and making grid item*/
+#toursimage {
+    grid-area: toursimage;
+    margin: auto;
+}
+
+/*Styling width of tours image*/
+#toursimage img {
+    width: 32vw;
+}
+
+/*Styling the wine banner, giving it a background image, and making it a grid item, and a nested grid*/
+#wineBanner {
+    background-image: url(../images/grapes.jpg);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin-top: 20px;
+    grid-area: winebanner;
+    display: grid;
+    grid-template-areas: 
+        "caption"
+        "button";
+    justify-content: center;
+    text-align: center;
+}
+
+/*Styling the title withing the wine banner and making a nested grid item*/
+#wineBanner h2{
+    background-color: var(--sub-beige);
+    grid-area: caption;
+    font-size: 2.5em;
+    padding: 15px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/*Styling the wine page link and making it a nested grid item*/
+#wineBanner a{
+    background-color: var(--main-green);
+    grid-area: button;
+    border-radius: 6px;
+}
+
+/*Styling the wine page link when hovering or focusing*/
+#wineBannerButton:hover, #wineBannerButton:focus {
+    background-color: var(--light-green);
+}
+
+/*Styling the about us photo and making it a grid*/
+#sienaphoto {
+    grid-area: siena;
+    margin: 0;
+}
+
+/*Styling the width of the abour us supporting image*/
+#sienaphoto img {
+    width: 30vw;
+}
+
+/*Styling the about us text and making it a grid item*/
+#aboutusText {
+    grid-area: abouttext;
+    margin: 20px;
+}
+
+/*Styling the header for the about us text*/
+#aboutusText h2{
+    text-align: center;
+}
+
+/*Styling the about us webpage link*/
+#aboutusText h3{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--light-maroon);
+}
+
+
+
+/*Styling the top link*/
+#topLink {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+/*Styling return to top link when hovering/focusing*/
+#topLink:hover, #topLink:focus {
+    color: var(--main-green);
+}
+
+/*Styling the base of the footer*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: var(--maroon);
+    padding: 5px;
+    padding-left: 30px;
+    padding-right:30px;
+    color: var(--back-beige);
+    font-size: .6em;
+}
+
+/*Styling the width of each section within the footer*/
+footer > section {
+    width: 300px;
+}
+
+/*Moving the form to center content*/
+#newsletterform {
+    text-align: center;
+}
+
+/*Making the individual items in the fieldset to be at the end of the box*/
+#newsletterinfo{
+    text-align: end;
+}
+
+/*Styling the text input boxes*/
+input[type=text] {
+    width: 250px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+/*Styling the text input boxes when focused*/
+input[type=text]:focus {
+    border-color: var(--deep-green);
+    border: var(--deep-green) solid 4px;
+}
+
+/*Styling the submit button*/
+input[type=button] {
+    font-size: 14pt;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/*Styling submit button when hovering*/
+input[type=button]:hover {
+    cursor: pointer;
+    font-size: 15pt;
+}
+
+/*Styling link text color*/
+a {
+    color: black;
+}
+
+/*Styling the color of the additional sources links*/
+#addsources a {
+    color: var(--back-beige);
+}
+
+/*Styling the additional sources links when focused*/
+#addsources a:focus {
+    background-color: var(--back-beige);
+    color: var(--deep-green);
+}
+
+/*Styling the contact us button*/
+#contactButton {
+    background-color: var(--main-green);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*Styling the contact us button when hovering*/
+#contactButton:hover {
+    background-color: var(--light-green);
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/*Keeping the grid at a certain layout above 600px*/
+@media screen and (min-width:601px){
+    main {
+        display: grid;
+        grid-template-areas: 
+            "tourstext tourstext toursimage"
+            "winebanner winebanner winebanner"
+            "siena abouttext abouttext";
+        grid-template-columns: 33vw 33vw 33vw;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*Styling the webpage below 600px but above 480px making it more verticle-based*/
+@media all and (max-width:600px) {
+    video {
+        height:auto;
+    }
+    
+    main {
+        display: grid;
+        grid-template-areas: 
+            "tourstext" 
+            "toursimage"
+            "winebanner"
+            "siena"
+            "abouttext";
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+
+    #tourstext {
+        text-align: center;
+    }
+
+    #toursimage img {
+        width: 60vw;
+    }
+
+    #sienaphoto {
+        text-align: center;
+    }
+
+    #sienaphoto img{
+        width: 50vw;
+    }
+
+    #aboutusText {
+        text-align: center;
+    }
+
+    footer {
+        font-size: .6em;
+    }
+
+    footer > section {
+        width: 200px;
+    }
+    input[type=text] {
+        width: 200px;
+    }
+}
+
+/*Styling the webpage below 480px wide making it even more verticle based*/
+@media all and (max-width:480px) {
+    
+    nav {
+        font-size: .8em;
+    }
+
+    #pageTitleText {
+        font-size: 30pt;
+    }
+    
+    video {
+        height:auto;
+    }
+    
+    main {
+        display: grid;
+        grid-template-areas: 
+            "tourstext" 
+            "toursimage"
+            "winebanner"
+            "siena"
+            "abouttext";
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+        gap: 30px;
+    }
+
+    #tourstext {
+        text-align: center;
+    }
+
+    #tourstext p {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    #toursimage img {
+        width: 80vw;
+    }
+
+    #wineBanner {
+        background-image: url(../images/grapes.jpg);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 20px;
+        grid-area: winebanner;
+        display: grid;
+        grid-template-areas: 
+            "caption"
+            "button";
+        justify-content: center;
+        text-align: center;
+    }
+
+    #wineBanner h2 {
+        font-size: 1.4em;
+        width: 50vw;
+        padding: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #sienaphoto {
+        text-align: center;
+    }
+
+    #sienaphoto img{
+        width: 80vw;
+    }
+
+    #aboutusText {
+        text-align: center;
+        font-size: .8em;
+    }
+
+    footer {
+        font-size: .7em;
+    }
+
+    footer > section {
+        width: 150px;
+    }
+    input[type=text] {
+        width: 150px;
+    }
+}
+
+/*Styling the nav at and below 400px*/
+@media all and (max-width:400px)  {
+    nav {
+        font-size: .8em;
+    }
+    nav ul li a {
+        padding: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+}
